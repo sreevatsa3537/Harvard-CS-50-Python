@@ -27,7 +27,7 @@ hello()
 # @greet # use this or the line below
 def add(x,y):
     print(x+y)        
-greet(add(2,3))  # this will give error because mfx() like we did not say mfz(x,y) and it will become mfx(2,3) 
+(greet (add))(2,3)  # this will give error because mfx() like we did not say mfz(x,y) and it will become mfx(2,3) 
 # which is wrong does not take any parameters so we need to use *args and **kwargs in mfx
 # why we need both *args and **kwargs because if we have a function with both positional and keyword arguments
 # def func(a,b,c=5,d=10): one cant do the job 
